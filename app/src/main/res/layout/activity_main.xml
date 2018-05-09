@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/card_main_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="imageTransition"
+            app:srcCompat="@mipmap/photo" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profile_image"
+            android:layout_marginStart="113dp"
+            android:fontFamily="@font/syncopate_bold"
+            android:text="Ciaphas Cain"
+            android:transitionName="nameTransition"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profile_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/profile_name"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/syncopate"
+            android:text="Ciaphas Cain is a &quot;Commissar,&quot; a political officer of the Imperium of Man's troops."
+            android:transitionName="descTransition"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</RelativeLayout>

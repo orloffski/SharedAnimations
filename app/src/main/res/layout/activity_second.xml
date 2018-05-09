@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:transitionName="imageTransition"
+        app:srcCompat="@mipmap/photo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/syncopate_bold"
+        android:text="Ciaphas Cain"
+        android:transitionName="nameTransition"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/syncopate"
+        android:textSize="10sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:transitionName="descTransition"
+        android:text="Ciaphas Cain is a &quot;Commissar,&quot; a political officer of the Imperium of Man's troops. Commissars are charged with maintaining the morale and loyalty of Imperial troops, an important matter when one considers the horrific odds and staggering casualties of the &quot;grim dark future&quot; of the WH40K setting. Despite holding no standard rank and being outside the chain of command, commisars have wide discretionary powers, including summary execution or even decimation, in pursuit of their duties." />
+</RelativeLayout>
